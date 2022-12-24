@@ -63,7 +63,7 @@ def get_similar_models(model, size, year, type, cylinders, EDA_data):
 app = Flask(__name__)
 
 # Income.csv contains raw data, is not sorted and cleaned for training
-path_to_income_csv = 'Demo_and_EDA_model_code/with_income.csv'
+path_to_income_csv = 'Demo_and_EDA_model_code/data_with_income.csv'
 EDA_data = pd.read_csv(path_to_income_csv)
 
 # one_hotted_training_data.csv is suitable for training, we filter out undesired values
